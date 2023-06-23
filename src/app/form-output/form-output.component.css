@@ -1,0 +1,59 @@
+table{
+    width: 70%;
+    border-collapse: collapse;
+    
+    
+    
+}
+
+.table-container{
+    margin-left: 17%;
+    margin-top: 4%;
+}
+
+h2{
+    color: #663423;
+    padding: 20px;
+}
+
+
+thead{
+    background-color:#f15a29;
+    color: #fff;
+}
+th{
+    padding: 10px;
+    text-align:left;
+    font-weight: bold;
+    border: 1px solid #663423;
+}
+td{
+    padding: 10px;
+    border: 1px solid #cdd9e5;
+   
+}
+
+tbody tr:nth-child(even){
+    background-color: #f7bda4;
+}
+.image{
+    height:500;
+    width: 450px;
+    margin-left: 33%;
+}
+.warMsg{
+    color: rgb(194, 181, 3);
+    margin-left: 40%;
+}
+.cancle-btn{
+    background-color: #ec981a;
+    padding: 10px 15px;
+    border: none;
+    border-radius:6px ;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 46%;
+}
+
+
+  

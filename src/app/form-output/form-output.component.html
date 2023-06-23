@@ -1,0 +1,34 @@
+<div class="display">
+
+    <div>
+        <img *ngIf="showErrorImg" src="https://res.cloudinary.com/dr7wumhnj/image/upload/v1687514313/IMG_20230623_152633_zxjxoz.jpg" class="image">
+        <div *ngIf="showErrorImg" class="warMsg"><h3>Still Bulding The Site</h3></div>
+        <div  *ngIf="showErrorImg" ><button (click)="cancle()" class="cancle-btn">x-Cancle</button></div>
+
+    </div>
+
+    
+    <div>
+        <table class="table-container"> 
+            <h2 class="header">Stored Details</h2>
+            <tr>
+                <th>Mobile Name</th>
+                <th>Device Model</th>
+                <th>Device RAM</th>
+                <th>Edit</th>
+                <th>Remove</th>
+
+             
+            </tr>
+            <tr *ngFor="let m of detailsArray1">
+                <td>{{m.mobileName}}</td>
+                <td> {{m.deviceModel}}</td>
+                <td>{{m.deviceRam}} </td>
+                <td><button id="button{{m.id}}" class="btn btn-info" (click)="dataUpdate()">Update</button></td>
+                <td><button id="button{{m.id}}" class="btn btn-danger" (click)="onDelete($event)">Delete</button></td>
+                
+            </tr>
+
+        </table>
+    </div>
+</div>

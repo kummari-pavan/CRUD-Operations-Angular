@@ -1,0 +1,72 @@
+
+
+
+.formData {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: rgba(194, 238, 238, 0.842);
+    padding-left: 30px;
+    border-radius: px;
+    margin-top:3% ;
+    box-shadow: 5px 10px gray;
+    
+  }
+  
+
+  .head {
+    text-align: center;
+    font-size: 20px;
+    color:black;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-right: 10px;
+
+  }
+  
+ 
+  input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+  } 
+
+  
+  .container{
+    
+    margin-top: 4%;
+  }
+  .butn{
+    margin-left: 50px;
+    margin-bottom:4% ;
+    margin-top:3% ;
+
+  }
+.err{
+    color:red ;
+    margin-top: -4%;
+    margin-bottom: 3%;
+  }
+  .image{
+    height: 300px;
+    width: 350px;
+  }
+  .succimg{
+    height: 350px;
+    width: 300px;
+  }
+  .sucMsg{
+    color: green;
+    margin-left: 12%;
+  }
+  .errMsg{
+    color: red;
+    margin-left: 10%;
+  }
+  .mainHead{
+    color:#521212;
+    margin-left :33%;
+    padding: 10px;
+  }

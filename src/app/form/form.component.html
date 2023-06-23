@@ -1,0 +1,57 @@
+
+<div class="container">
+    <h1 class="mainHead">MObile Details Store </h1>
+    <div class="row">
+        <div class="col-4">
+
+            <img src="https://res.cloudinary.com/dr7wumhnj/image/upload/v1687509513/IMG_20230623_134951_aniybg.jpg" class="image">
+
+        </div>
+        <div class="col-4">
+            <div class="formData">
+    
+    
+                <h1 class="head">Enter The Mobile Details</h1>
+              <div >
+                Mobile Name:
+                <input type="text" id="mobileName" [(ngModel)]="mobileName" />
+                <div *ngIf="mobileNameErr" class="err">{{mobileNameErr}}</div>
+              </div>
+              <div >
+                Device Model:
+                <input type="text" id="deviceModel" [(ngModel)]="deviceModel" />
+                <div *ngIf="deviceModelErr" class="err">{{deviceModelErr}}</div>
+              </div>
+              <div >
+                Device RAM:<br/>
+                <input type="text" id="deviceRam" [(ngModel)]="deviceRam" />
+                <div *ngIf="deviceRamErr" class="err">{{deviceRamErr}}</div>
+              </div>
+               
+        
+            <div >
+                <button (click)="saveData()" class="btn btn-success butn">Save Data</button> 
+            </div>
+            
+        
+        </div>
+        
+
+        </div>
+        <div class="col-4">
+            <img *ngIf="showSuccessImg" src="https://res.cloudinary.com/dr7wumhnj/image/upload/v1687509578/IMG_20230623_134907_ipzkwo.jpg" class="succimg">
+            <div *ngIf="showSuccessImg" class="sucMsg"><h4>Successfully Stored</h4></div>
+
+            <img *ngIf="showErrorImg" src="https://res.cloudinary.com/dr7wumhnj/image/upload/v1687509552/IMG_20230623_134926_fwg3dh.jpg" class="image">
+            <div *ngIf="showErrorImg" class="errMsg"><h3>Somthing Wrong </h3></div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+
